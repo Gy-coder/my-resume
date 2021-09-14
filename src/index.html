@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>我的简历</title>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+    
+        body {
+          background: #eee;
+          margin: 20px 0;
+        }
+    
+        article {
+          width: 21cm;
+          min-height: 29.7cm;
+          background: white;
+          margin: 0 auto;
+          overflow: auto;
+          padding: 1em;
+        }
+      </style>
+      <style media="print">
+        body {
+          margin: 0;
+        }
+    
+        .page2 {
+          page-break-before: always;
+          margin-top: 30px;
+        }
+      </style>
+      <style>
+        body {}
+    
+        p {
+          margin: .3em 0;
+        }
+    
+        h1 {
+          font-size: 25px;
+          margin-top: 0;
+        }
+    
+        h4,
+        h5,
+        h6 {
+          font-weight: normal;
+        }
+    
+        ol,
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+    
+        strong {
+          font-weight: normal;
+          color: #f60;
+        }
+    
+        a {
+          color: #999;
+          text-decoration: none;
+          border-bottom: 1px solid;
+        }
+    
+        p,
+        li {
+          color: #666;
+        }
+    
+        strong {
+          font-weight: normal;
+        }
+    
+        h3,
+        h4,
+        h5,
+        h6 {
+          margin: 0;
+        }
+    
+        .bio {
+          position: relative;
+        }
+    
+        .bio img {
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+      </style>
+    
+      <style>
+        .projects {}
+    
+        .projects p {
+          color: #666;
+        }
+    
+        .projects strong {
+          color: #f60;
+        }
+    
+        .projects>ol {
+          margin-top: 0;
+          list-style-position: inside;
+          padding: 0;
+        }
+    
+        .projects>ol>li {
+          margin-bottom: 24px;
+        }
+    
+        .projects>ol>li>header {
+          display: flex;
+          justify-content: space-between;
+        }
+    
+        .projects>ol>li h3 {
+          display: inline-block;
+        }
+      </style>
+      <style>
+        .skills {}
+    
+        #skills {
+    
+          width: 500px;
+          height: 270px;
+          display: none ;
+        }
+        @media print {
+          #skills{display:none;}
+        }
+    
+    
+        .skills>.wrapper {
+          display: flex;
+          justify-content: space-between;
+        }
+    
+        .skills>.wrapper>:first-child {
+          margin-right: 24px;
+        }
+    
+        .skills>.wrapper>#skills {}
+    
+        .skills>.wrapper>ul {
+          color: #666;
+        }
+    
+        .skills>.wrapper strong {
+          color: #f60;
+        }
+    
+        .skills>.wrapper>ul>li {
+          line-height: 1.2;
+          margin-bottom: 8px;
+        }
+      </style>
+      <style>
+        .openSource {}
+    
+        .openSource>h2 {}
+    
+        .openSource header img {
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+    
+        .openSource>ul {}
+    
+        .openSource>ul>li {
+          margin-bottom: 24px;
+        }
+    
+        .openSource header {
+          position: relative;
+          display: flex;
+          justify-content: space-between;
+        }
+    
+        .openSource h3 {}
+      </style>
+      <style>
+        .jobs {}
+    
+        .jobs>h2 {}
+    
+        .jobs>ol {}
+    
+        .jobs>ol>li {
+          margin: 12px 0;
+        }
+    
+        .jobs header {
+          display: flex;
+          color: #666;
+          margin-bottom: 12px;
+        }
+    
+        .jobs header>h3 {
+          font-size: 18px;
+          color: #333;
+        }
+    
+        .jobs header>h4 {
+          margin-left: 1em;
+          font-size: 18px;
+        }
+    
+        .jobs header>span {
+          font-size: 18px;
+          margin-left: auto;
+        }
+      </style>
+    
+    
+    
+      <style>
+        @media (max-width: 500px) {
+          body {
+            margin: 0;
+          }
+    
+          article {
+            width: auto;
+            height: auto;
+          }
+    
+          .bio img {
+            display: none;
+          }
+    
+          .skills .wrapper {
+            flex-direction: column;
+          }
+    
+          #skills {
+            width: auto;
+          }
+          .jobs header{
+            flex-direction: column;
+          }
+          .jobs header >h3,
+          .jobs header >h4,
+          .jobs header >span {
+            margin: 0;
+          }
+        }
+      </style>
+</head>
+<body>
+    <article>
+        <section class="bio">
+            <h1>巩毅</h1>
+            <img src="./image/me2.png" alt="" width="100" height="100">
+            <p>应聘前端工程师</p>
+            <p>手机:<a href="tel:15034408200">15034408200</a> | 微信: YesGongYi | 邮箱: <a href="mailto:406631892@qq.com">406631892@qq.com</a></p>
+        </section>
+        <section class="projects">
+            <h2>项目经历</h2>
+            <ol>
+              <li>
+                <header>
+                  <h3>banana-ui</h3>
+                  <span>
+                    <a href="https://github.com/Gy-coder/banana-ui">源码链接</a>
+                    <a href="https://gy-coder.github.io/banana-ui-website/">项目预览</a>
+                  </span>
+                </header>
+                <p>
+                    项⽬介绍: banana-ui是⼀款基于<strong>React</strong>和<strong>TypeScript</strong>的UI框架，参考了antD、Element UI等主流开源UI框架，从⽤例分析开始，实现了<strong>Button</strong> 、<strong>Radio</strong> 、<strong>Checkbox</strong>、<strong>Input</strong>、<strong>Switch</strong>等
+                    常⽤组件，组件提供了多种⾃定义的属性，⽐如Button组件的样式、⼤⼩，Rate组件的半选等，并提供了组件的⼀键引⼊/ 注册⽅式，⽤户可以选择按需引⼊。本项⽬基于<strong>dumi</strong>搭建，使⽤<strong>Sass</strong>编写样式，完成了部分组件的<strong>单元测试</strong>以及使⽤<strong>travis ci</strong>做集成测试，以及撰写官⽹。
+                </p>
+                <p>通过本项目让我对TypeScript和单元测试有了一定的了解</p>
+              </li>
+              <li>
+                <header>
+                  <h3>banana-vue3-ui</h3>
+                  <span>
+                    <a href="https://github.com/Gy-coder/banana-vue3-ui">源码链接</a>
+                    <a href="https://gy-coder.github.io/banana-vue3-ui-website">项目预览</a>
+                  </span>
+                </header>
+                <p>项⽬介绍: 项⽬介绍: banana-vue3-ui是⼀款基于Vue3开发的UI框架，项⽬基于<strong>Vite</strong>搭建，使⽤ <strong>Sass</strong>编写默认样式，组件源码使⽤<strong>Component Api</strong>进⾏开发，⽬前已实
+
+                    现<strong>Icon</strong>、<strong>Button</strong> 、<strong>Input</strong>、<strong>Tabs</strong>、<strong>Slider</strong>、<strong>Message</strong>、<strong>Dialog</strong>组件，源代码存储在
+
+                    github中，可以直接查看每个组件的源代码和示例</p>
+              </li>
+              <li>
+                <header>
+                  <h3>banana-epic</h3>
+                  <span>
+                    <a href="https://github.com/Gy-coder/react-epic/">源码链接</a>
+                    <a href="https://gy-coder.github.io/banana-epic/">项目预览</a>
+                  </span>
+                </header>
+                <p>项目介绍: banana-epic是一款基于<strong>React</strong>开发的在线图床项目，项目使用<strong>create-react-app</strong>进行搭建，采用<strong>Styled-Compnent</strong>编写基础样式，实现了用户<strong>登陆注册</strong>，<strong>上传图片</strong>，<strong>修改图片大小</strong>以及<strong>查看上传历史</strong>功能，项目的全局数据管理使用了<strong>mobx-react</strong>框架，使用<strong>LeanCloud</strong>国际版实现后端登陆注册，查看历史记录等功能，基础组件使用了<strong>antD</strong>。</p>
+              </li>
+              <li>
+                <header>
+                  <h3>book-keeping 在线记账</h3>
+                  <span>
+                    <a href="https://github.com/Gy-coder/jizhang/">源码链接</a>
+                    <a href="https://gy-coder.github.io/banana-bookkeeping-website/">项目预览</a>
+                  </span>
+                </header>
+                <p>项目介绍: book-keeping记账本是一款极速记账应用，采用<strong>React</strong>、 <strong>TypeScript</strong>、<strong>React-router</strong>进行开发，并在项目中使用了自定义<strong>React Hooks</strong>，样式使用<strong>Styled-component</strong>编写，采用<strong>localStorage</strong>存储数据。本项目实现了<strong>基础的记账功能</strong>，<strong>当月预算的设置功能</strong> ，并通过<strong>Echarts</strong>实现了<strong>账本数据的可视化</strong></p>
+              </li>
+            </ol>
+          </section>
+      
+      
+      
+      
+      
+          <section class="skills">
+            <h2>掌握技能</h2>
+            <div class="wrapper">
+              <div id="skills"></div>
+              <ul>
+                <li>熟悉<strong>HTML</strong>/<strong>CSS</strong>/<strong>JavaScript</strong> </li>
+                <li>熟悉ES6，包括let、promise、解构等基本用法</li>
+                <li>熟悉<strong>React</strong>,有React组件开发经验</li>
+                <li>熟悉<strong>TypeScript</strong>的基本用法</li>
+                <li>了解<strong>Vue3</strong>相关技术</li>
+                <li>了解git、webpack、npm等前端工程化工具</li>
+              </ul>
+            </div>
+          </section>
+      
+          <section class="education">
+            <h2>教育经历</h2>
+            <p>
+                <span><time>2019年</time>~<time>至今</time></span>
+                山西师范大学 - 硕士 - 计算机科学与技术专业</p>
+            <p>
+              <span><time>2014年</time>~<time>2018年</time></span>
+              山西师范大学现代文理学院 - 本科 - 化学专业</p>
+          </section>
+
+      
+          <section class="others">
+            <h2>个人履历</h2>
+            <ul>
+              <li>英语能力: 英语6级 - 434分</li>
+              <li>攻读硕士期间获校级一等奖学金</li>
+            </ul>
+          </section>
+          
+          <section class="others">
+            <h2>其他链接</h2>
+            <ul>
+              <li><a href="https://github.com/Gy-coder/frontend-offer">我的博客</a></li>
+              <li><a href="https://github.com/Gy-coder">我的 GitHub</a></li>
+            </ul>
+          </section>
+      
+    </article>
+    <script src="./main.js"></script>
+</body>
+</html>
